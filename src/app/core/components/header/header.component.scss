@@ -1,0 +1,27 @@
+@import '../../../../assets/styles/variables';
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+    & {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .logo {
+        display: inline-block;
+        text-decoration: none;
+        transition: .4s all;
+        margin-bottom: 1rem;
+
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .header__inner {
+        background-color: $white;
+    }
+}
