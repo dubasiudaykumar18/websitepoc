@@ -24,7 +24,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { margin-bottom: calc($line-height-base / 2); }
+h6 { margin-bottom: calc(#{$line-height-base / 2}); }
 
 h1 { font-size: 48px; font-family: $font-family-serif; }
 h2 { font-size: 42px; font-family: $font-family-serif; color: $dark-blue; }

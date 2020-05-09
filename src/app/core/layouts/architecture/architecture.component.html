@@ -1,4 +1,4 @@
-<section class="section-architecture" [style.backgroundImage]="url('assets/images/eugene-lim-304646.jpg')">
+<section class="section-architecture" [style.backgroundImage]="'url(assets/images/eugene-lim-304646.jpg)'">
     <div class="container">
         <div class="section__head">
             <h2 class="section__title">
@@ -7,7 +7,15 @@
         </div>
         
         <div class="section__body">
+            <tabs>
+                <tab tabTitle="Tab 1">
+                  Here's some content.
+                </tab>
 
+                <tab tabTitle="Tab 2">
+                  And here's more in another tab.
+                </tab>
+              </tabs>
         </div>
     </div>
 </section>
