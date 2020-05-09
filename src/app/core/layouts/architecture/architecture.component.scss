@@ -1,0 +1,66 @@
+@import '../../../../assets/styles/variables';
+
+/* ------------------------------------------------------------ *\
+	Section Architecture
+\* ------------------------------------------------------------ */
+
+.section-architecture {
+    & {
+        padding: 67px 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section__head {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        .section__title {
+            color: $white;
+        }
+    }
+    
+    ::ng-deep .tabs-architecture {
+        & {
+            display: flex;
+        }
+        .tabs__head {
+            & {
+                flex: 0 1 30%;
+                max-width: 30%;
+                list-style: none;
+                color: $white;
+            }
+            li {
+                & {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: rgba(43, 42, 64, 0.8);
+                    transition: all .4s;
+                    cursor: pointer;
+                    margin-bottom: 5px;
+                }
+
+                &:hover {
+                    background-color: $blue;
+                }
+                
+                p {
+                    margin-left: 10px;
+                }
+
+                img {
+                    max-width: 60px;
+                }
+            }
+        }
+
+        tab {
+            &.active {
+                flex: 0 1 70%;
+                max-width: 70%;
+            }
+        }
+    }
+}
