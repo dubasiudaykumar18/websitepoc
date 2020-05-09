@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./architecture.component.scss']
 })
 export class ArchitectureComponent implements OnInit {
+  isActive: boolean;
 
   constructor() { }
+  
+  changeActiveTab(event) {
+    console.log(event);
+  }
 
   ngOnInit() {
   }

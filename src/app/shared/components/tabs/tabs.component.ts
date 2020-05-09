@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Tab } from './tab/tab.component';
 
 @Component({
   selector: 'tabs',
   template: `
-    <ul>
+    <ul class='tabs__head'>
       <li *ngFor="let tab of tabs" (click)="selectTab(tab)">
-        {{tab.tabTitle}}
+        <img *ngIf="tab.tabImage !== undefined" [src]='tab.tabImage' />
+        <p>
+          {{tab.tabTitle}}
+        </p>
       </li>
     </ul>
     <ng-content></ng-content>
@@ -17,7 +20,7 @@ export class TabsComponent{
   tabs: Tab[] = [];
   
   constructor() { }
-  
+
   selectTab(tab: Tab) {
     this.tabs.forEach((tab) => {
       tab.active = false;
