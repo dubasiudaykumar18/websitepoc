@@ -11,6 +11,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
+    "postinstall": "ngcc",
     "build:client-and-server-bundles": "ng build --prod && ng run mantraPM:server:production --bundleDependencies all"
   },
   "private": true,
