@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroSliderComponent } from '../components/hero-slider/hero-slider.component';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 @NgModule({
@@ -9,7 +9,11 @@ import { HeroSliderComponent } from '../components/hero-slider/hero-slider.compo
     HeroSliderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SlickCarouselModule
+  ],
+  exports: [
+    HeroSliderComponent
   ]
 })
 export class SharedModule { }
