@@ -1,0 +1,147 @@
+@import '../../../../assets/styles/variables';
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+    & { 
+        background-color: $blue-magenta;
+        color: $white;
+        padding-top: 35px;
+        font-size: 14px;
+    }
+    .footer__inner{ 
+        padding-bottom: 35px;
+    }
+
+    .footer__outer {
+        & {
+            padding-right: 30px;
+        }
+
+        img {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+    }
+    .footer__nav {
+        & {
+            list-style: none;
+            font-size: 18px;
+        }
+
+        li{ 
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .footer__copyright {
+        padding: 25px 0 24px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+    }
+    .footer__subscription {
+        h4 {
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 500;
+            letter-spacing: .6px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form__subscription {
+        & {
+            margin-bottom: 20px;
+        }
+
+        .form__control {
+            & {
+                position: relative;
+            }
+            input {
+                width: 100%;
+                border: 0;
+                padding: 0 40px 0 15px;
+                line-height: 50px;
+                color: $black;
+            }
+            .btn-subscription {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border: 0;
+                background-color: transparent;
+                
+                img {
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+    
+    .list-socials {
+        & {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            display: block;
+            padding: 0 5px;
+        }
+        svg {
+            width: 16px;
+            position: relative;
+            z-index: 1;
+            line-height: 40px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-decoration: none;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            z-index: 1;
+            
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all .3s;
+                margin: auto;
+                // z-index: -1;
+                border-radius: 50%;
+                box-shadow: inset 0 0 0 1px rgba(126, 127, 128, 0.2);
+            }
+
+            &:hover {
+                svg path {
+                    fill: $blue;
+                }
+            }
+            &:hover:after {
+                box-shadow: inset 0 0 0 25px #f1f4f6;
+            }
+        }
+    }
+}
