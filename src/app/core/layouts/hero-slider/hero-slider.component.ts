@@ -16,8 +16,18 @@ export class HeroSliderComponent implements OnInit {
     "cssEase": 'linear',
     "arrows": true
   };
-
+  
   constructor() { }
+
+  beforeChange (event) {
+    const currentSlide: number = event.currentSlide;
+    
+    // To add animation in the hero slider
+
+    if ( currentSlide !== event.currentSlide) {
+      console.log(event);
+    }
+  }
 
   ngOnInit() {
   }
