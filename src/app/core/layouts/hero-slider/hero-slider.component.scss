@@ -1,15 +1,74 @@
+@import '../../../../assets/styles/variables';
+
 /* ------------------------------------------------------------ *\
-	Hero Slider
+	Section Hero Slider
 \* ------------------------------------------------------------ */
 
-.hero-slider {
+.section-hero-slider {
     .carousel {
         .slick-slide {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
             width: 100%;
-            min-height: 700px;
+            padding: 200px 0;
+        }
+
+        .slider__content {
+            h1 {
+                margin-bottom: 30px;
+            }
+
+            .btn-learn-more {
+                border: 1px solid $white;
+                line-height: 48px;
+                color: $white;
+                max-width: 227px;
+                width: 100%;
+                text-transform: uppercase;
+                transition: all .4s;
+                font-weight: 500;
+            
+                &:hover {
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+            
+        }
+
+        .form-subscribe {
+            .form__control {
+                & {
+                    display: flex;
+                    align-items: center;
+                    max-width: 570px;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+                .form__input {
+                    line-height: 60px;
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 0 20px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    max-width: 423px;
+                    margin: 0 auto;
+                }
+                .btn-subscribe {
+                    display: block;
+                    background-color: $blue;
+                    text-align: center;
+                    text-transform: uppercase;
+                    line-height: 60px;
+                    font-weight: 500;
+                    color: $white;
+                    width: 100%;
+                    max-width: 146px;
+                    margin-right: auto;
+                }
+            }
         }
     }
 }

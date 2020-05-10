@@ -1,8 +1,55 @@
-<section class="hero-slider">
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" 
+<section class="section-hero-slider">
+    <ngx-slick-carousel class="carousel hero-slider" #slickModal="slick-carousel" 
                         [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide"  [style.backgroundImage]="'url(' + slide.img + ')'">
-            
+        <div ngxSlickItem class="slide slider__slide"  [style.backgroundImage]="'url(assets/images/image1-min.jpg)'">
+            <div class="slider__content text-center">
+                <div class="container">
+                    <h1>
+                        Stay with us <br>
+                        You gonna love it!
+                    </h1>
+    
+                    <form class="form-subscribe">
+                        <div class="form__control">
+                            <input class="form__input" type="text" placeholder="Your Email">
+        
+                            <button class="btn btn-subscribe">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div ngxSlickItem  class="slide"  [style.backgroundImage]="'url(assets/images/image2-min.jpg)'">
+            <div class="slider__content">
+                <div class="container">
+                    <h1>
+                        We help making <br>
+                        change happen
+                    </h1>
+    
+                    <button class="btn btn-learn-more">
+                        Learn more 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div ngxSlickItem class="slide"  [style.backgroundImage]="'url(assets/images/image3-min.jpg)'">
+            <div class="slider__content text-center">
+                <div class="container">
+                    <h1>
+                        Opportunities don't happen. <br>
+                        You create them.
+                    </h1>
+    
+                    <button class="btn btn-learn-more margin-auto">
+                        Learn more 
+                    </button>
+                </div>
+            </div>
         </div>
     </ngx-slick-carousel>
 </section>
