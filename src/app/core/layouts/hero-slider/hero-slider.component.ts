@@ -9,18 +9,18 @@ export class HeroSliderComponent implements OnInit {
 
   slides = [
     {
-      img: "assets/images/eugene-lim-304646.jpg",
+      img: "assets/images/image1-min.jpg",
       content: 'We help making change happen'
     },
     {
-      img: "assets/images/Layer-171_03.jpg",
+      img: "assets/images/image2-min.jpg",
       content: 'We help making change happen'
     },
     {
-      img: "assets/images/oslider1-s3_03.jpg",
+      img: "assets/images/image3-min.jpg",
       content: 'Stay with us You gonna love it'
     },
-    {img: "assets/images/s1-slide-1.jpg"}
+    {img: "assets/images/image4-min.jpg"}
   ];
 
   slideConfig = {
