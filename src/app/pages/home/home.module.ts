@@ -6,6 +6,7 @@ import { HeroSliderComponent } from 'src/app/core/layouts/hero-slider/hero-slide
 import { ArchitectureComponent } from 'src/app/core/layouts/architecture/architecture.component';
 import { WhyUsComponent } from 'src/app/core/layouts/why-us/why-us.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     SlickCarouselModule,
     SharedModule  
   ],
