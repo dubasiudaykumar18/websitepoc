@@ -96,8 +96,10 @@
                         font-weight: 500;
                         width: 100%;
                         line-height: 50px;
+                        text-transform: uppercase;
 
                         .arrow-right {
+                            margin-left: 10px;
                             transition: all .4s;
                         }
 
@@ -111,14 +113,14 @@
             }
 
             .form__aside {
-                background-color: $blue;
+                background-color: $desaturated-blue;
                 color: $white;
-                padding: 20px;
+                padding: 30px 20px;
                 flex-grow: 1;
                 width: 34.188%;
 
                 .form__entry {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -127,12 +129,14 @@
                 list-style: none;
             }
             li {
-                margin-bottom: 14px;
+                margin-bottom: 24px;
             }
             a {
                 display: flex;
                 align-items: center;
                 text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
                 
                 span {
                     display: inline-block;
