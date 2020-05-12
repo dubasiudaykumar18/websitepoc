@@ -1,3 +1,5 @@
+@import '../../../../assets/styles/variables';
+
 /* ------------------------------------------------------------ *\
 	Section About Us
 \* ------------------------------------------------------------ */
@@ -11,12 +13,14 @@
         margin-bottom: 20px;
 
         .section__title {
+            color: $black;        
         }
     }
     .section__body {
         .service {
             max-width: 850px;
             margin: 0 auto;
+            margin-bottom: 20px;
             
             .service__head {
                 & {

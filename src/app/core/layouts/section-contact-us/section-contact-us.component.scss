@@ -1,0 +1,166 @@
+@import '../../../../assets/styles/variables';
+
+/* ------------------------------------------------------------ *\
+	Section Contact Us
+\* ------------------------------------------------------------ */
+
+.section-contact-us {
+    & {
+        padding: 40px 0 0;
+    }
+    .section__head {
+        margin-bottom: 20px;
+        text-align: center;
+        
+        .section__title {
+            color: $black;        
+        }
+    }
+    .section__body {
+        & {
+            padding: 100px 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-contact-us {
+            & {
+                background-color: $white;
+                display: flex;
+                align-items: center;
+            }
+            
+            h3 {
+                font-family: "Playfair Display", serif;
+                font-weight: 700;
+            }
+
+            .form__content {
+                padding: 31px 30px 10px 30px;
+                width: 65.812%;
+                flex-grow: 1;
+
+                .form__row {
+                    display: flex;
+                    align-items: flex-start;
+                }
+                .form__entry {
+                    margin-bottom: 20px;
+                    
+                    h3 {
+                        color: $black;
+                        
+                    }
+                }
+                .form__control ~ .form__control{
+                    margin-top: 30px;
+                }
+                .form__textarea {
+                    width: 100%;
+                    appearance: none;
+                    resize: none;
+                    padding: 20px;
+                    border: 1px solid #e3e4e5;
+                    transition: all .4s;
+    
+                    &:focus {
+                        border-color: $blue;
+                    }
+                }
+                .form__col {
+                    flex: 0 1 50%;
+                    max-width: 50%;
+                }
+                .form__col ~ .form__col {
+                    margin-left: 30px;
+                }
+                .form__input {
+                    width: 100%;
+                    padding: 0 20px;
+                    line-height: 50px;
+                    border: 1px solid #e3e4e5;
+                    transition: all .4s;
+    
+                    &:focus {
+                        border-color: $blue;
+                    }
+                }
+                .form__actions {
+                    .btn-submit {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $blue;
+                        color: $white;
+                        font-weight: 500;
+                        width: 100%;
+                        line-height: 50px;
+
+                        .arrow-right {
+                            transition: all .4s;
+                        }
+
+                        &:hover {
+                            .arrow-right{ 
+                                transform: translateX(4px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form__aside {
+                background-color: $blue;
+                color: $white;
+                padding: 20px;
+                flex-grow: 1;
+                width: 34.188%;
+
+                .form__entry {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .list-contacts {
+            & {
+                list-style: none;
+            }
+            li {
+                margin-bottom: 14px;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                
+                span {
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+
+                .ico {
+                    & {
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    img {
+                        max-width: 15px;
+                        transition: transform .4s;
+                    }
+                }
+                
+                &:hover {
+                    .ico img {
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }   
+    }
+}
