@@ -1,12 +1,15 @@
 import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, SimpleChanges } from '@angular/core';
 
 // Import interfaces
-import { IDropdownInput } from '../../interfaces/dropdown';
+export interface IDropdownInput {
+  name?: string,
+  id?: number
+}
 
 @Component({
   selector: "ng-dropdown",
   templateUrl: "./dropdown.component.html",
-  styleUrls: ["./dropdown.component.css"]
+  styleUrls: ["./dropdown.component.scss"]
 })
 export class DropdownComponent {
   public ifContainerFocused: boolean;

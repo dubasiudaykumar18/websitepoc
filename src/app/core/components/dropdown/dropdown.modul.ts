@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 
 import { DropdownComponent } from './dropdown.component';
-import { GetSelectedNamePipe } from "./dropdown.pipe";
+import { GetSelectedNamePipe } from "./dowpdown.pipe";
 
 @NgModule({
   imports: [CommonModule, FormsModule],
