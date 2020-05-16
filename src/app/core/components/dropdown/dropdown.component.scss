@@ -12,7 +12,11 @@
     left: 0;
     width: 180px;
     background-color: #fff;
-    
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .3s;
+
     ul {
       list-style: none;
       
