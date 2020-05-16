@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
+    path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   { 
     path: 'about-us', loadChildren: () => import('./pages/about-us/about-us.module').then(m => m.AboutUsModule) 
