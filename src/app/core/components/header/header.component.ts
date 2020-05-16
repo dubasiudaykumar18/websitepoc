@@ -6,17 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  dropdonMenu = [{
-    id: 1,
-    name: "Value Proposition"
+  dropdownHome = [{
+    name: "Value Proposition",
+    link: 'value-proposition'
   },
   {
-    id: 2,
-    name: "Architecture"
+    name: "Architecture",
+    link: 'architecture'
   },
   {
-    id: 3,
-    name: "Integrations"
+    name: "Integrations",
+    link: 'integrations'
   }];
 
   constructor() { }

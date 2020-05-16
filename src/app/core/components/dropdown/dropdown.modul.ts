@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
 
 import { DropdownComponent } from './dropdown.component';
-import { GetSelectedNamePipe } from "./dowpdown.pipe";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, FormsModule],
-  declarations: [DropdownComponent, GetSelectedNamePipe],
+  imports: [CommonModule, RouterModule],
+  declarations: [DropdownComponent],
   exports: [DropdownComponent]
 })
 export class DropdownModule {}

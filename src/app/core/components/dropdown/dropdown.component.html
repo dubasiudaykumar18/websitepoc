@@ -1,41 +1,10 @@
-<ng-container>
-    <div class="ng-dropdown">
-      <span *ngIf="dTitle" [innerText]="dTitle" class="ng-dropdown__title"></span>
-      <ul class="ng-dropdown__container" tabindex="0" (focus)="ifContainerFocused=true" (blur)="onDropdownBlur($event)" [ngStyle]="ifContainerFocused ? containerFocusedStyles: {}"
-        #dropdownMenu>
-        <li [ngStyle]="ifContainerFocused ? selectedItemFocusedStyles: {}">
-          <a (click)="hideDropdown()">
-            <span *ngIf="!editable; else ifEditableList" (focus)="onInputFocus($event)" [innerText]="_selectedOption?.name"></span>
-            <ng-template #ifEditableList>
-              <input class="ng-dropdown__container--editable" [ngModel]="_selectedOption | GetSelectedNamePipe" (focus)="onInputFocus($event)"/>
-            </ng-template>
-            <img src="assets/downPopup.png" />
-          </a>
-        </li>
-        <ul class="ng-dropdown__container--list" [ngStyle]="ifContainerFocused ? restOfListFocusedStyles: {}">
-          <li *ngIf="filter" [ngStyle]="ifContainerFocused ? selectedItemFocusedStyles: {}">
-            <input #dropdownFilter class="ng-dropdown__container--list__filter" placeholder="Search" (keyup)="onFilterSearch($event)" (blur)="onDropdownBlur($event)" />
-          </li>
-          <ul class="ng-dropdown__container--list__sublist" [ngStyle]="ifContainerFocused ? restOfListWithoutFilterFocusedStyles: {}">
-            <ng-container *ngIf="_data?.length else noResults">
-              <li *ngFor="let option of _data" [ngClass]="_selectedOption?.name == option.name ? 'active' : ''">
-                <a [innerText]="option.name" (click)="onDropdownItemSelect($event, option)"></a>
-              </li>
-            </ng-container>
-            <ng-template #noResults>
-              <li>
-                <a>No Results Found</a>
-              </li>
-            </ng-template>
-          </ul>
-        </ul>
-      </ul>
-      <div class="ng-dropdown__button" [ngClass]="disabled ? 'disabled' : ''" (mouseup)="onDropdownMenuClick($event)" #dropdownButton>
-        <span *ngIf="!editable; else ifEditable" [innerText]="_selectedOption?.name"></span>
-        <ng-template #ifEditable>
-          <input #dropdownInput (keyup)="onInputChange($event)" [ngModel]="_selectedOption | GetSelectedNamePipe" />
-        </ng-template>
-        <img src="assets/downPopup.png" />
-      </div>
-    </div>
+<div class="dropdown">
+  <ng-container *ngIf="options">
+    <ul class="list-dropdwon">
+      <li *ngFor="let item of options; let i = index;">
+        <a [id]='i'[routerLink]='item.link' [innerText]='item.name'>
+        </a>
+      </li>
+    </ul>
   </ng-container>
+</div>
