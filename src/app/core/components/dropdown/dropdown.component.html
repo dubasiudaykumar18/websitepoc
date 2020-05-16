@@ -2,7 +2,7 @@
   <ng-container *ngIf="options">
     <ul class="list-dropdwon">
       <li *ngFor="let item of options; let i = index;">
-        <a [id]='i'[routerLink]='item.link' [innerText]='item.name'>
+        <a [id]='i'[routerLink]="'/' + item.link" [innerText]='item.name'>
         </a>
       </li>
     </ul>

@@ -7,5 +7,4 @@ export const aboutUsRouters: Routes = [
     {  path: '', component: AboutUsComponent },
     {  path: 'pilot', component: PilotComponent },
     {  path: 'story-line', component: StoryLineComponent }
-
 ];  

@@ -3,29 +3,29 @@ import { NavDropdown } from '../nav-dropdown';
 export const dropdownServiceLinks: NavDropdown[] = 
 [{
     name: "Offerings",
-    link: 'offerings'
+    link: "offerings"
   },
   {
     name: "Project Plan",
-    link: 'project-plan'
+    link: "project-plan"
   },
   {
     name: "Project Report",
-    link: 'project-report'
+    link: "project-report"
   },
   {
     name: "Project Governance",
-    link: 'project-governance'
+    link: "project-governance"
   },
   {
     name: "Project Repository",
-    link: 'project-repository'
+    link: "project-repository"
   },
   {
     name: "Project PMO",
-    link: 'project-pmo'
+    link: "project-pmo"
   },
   {
     name: "Consulting",
-    link: 'consulting'
+    link: "consulting"
 }];
