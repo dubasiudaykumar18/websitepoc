@@ -8,8 +8,6 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 export class SocialLinksComponent implements OnInit {
 
   constructor() { }
-
-
   ngOnInit() {
   }
 }
