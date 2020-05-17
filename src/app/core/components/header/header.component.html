@@ -20,33 +20,55 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a routerLink='/'>
+                        <a routerLink='/home'>
                             Home
                         </a>
+
+                        <app-dropdown [options]="dropdownHomeLinks"></app-dropdown>
                     </li>
     
                     <li>
-                        <a routerLink='/industries'>
-                            About MantraPM
+                        <a routerLink='/about-us'>
+                            About Us
                         </a>
+
+                        <app-dropdown [options]="dropdownAboutLinks"></app-dropdown>
                     </li>
     
                     <li>
                         <a routerLink='/posts'>
                             Our Services
                         </a>
+
+                        <app-dropdown [options]="dropdownServiceLinks"></app-dropdown>
                     </li>
 
                     <li>
                         <a routerLink='/test'>
                             How it Works
                         </a>
+                        
+                        <app-dropdown [options]="dropdownHowItWorksLinks"></app-dropdown>
                     </li>
 
                     <li>
-                        <a routerLink='/test'>
+                        <a routerLink='/auth'>
+                            Sign Up
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink='/auth'>
+                            Sign In
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink='/contact-us'>
                             Contact Us
                         </a>
+
+                        <app-dropdown [options]="dropdownContactLinks"></app-dropdown>
                     </li>
                 </ul>
             </nav>

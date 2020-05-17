@@ -19,7 +19,6 @@ export class Tab {
       tabs.addTab(this);
   }
 
-  @Input() tabTitle;
-  @Input() tabImage;
- 
+  @Input() tabTitle: string;
+  @Input() tabImage: string;
 }

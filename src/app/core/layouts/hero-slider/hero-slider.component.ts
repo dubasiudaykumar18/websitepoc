@@ -6,31 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-slider.component.scss']
 })
 export class HeroSliderComponent implements OnInit {
-
-  slides = [
-    {
-      img: "assets/images/eugene-lim-304646.jpg",
-      content: 'We help making change happen'
-    },
-    {
-      img: "assets/images/Layer-171_03.jpg",
-      content: 'We help making change happen'
-    },
-    {
-      img: "assets/images/oslider1-s3_03.jpg",
-      content: 'Stay with us You gonna love it'
-    },
-    {img: "assets/images/s1-slide-1.jpg"}
-  ];
-
   slideConfig = {
+    "autoplay": true,
+    "autoplaySpeed": 2000,
     "slidesToShow": 1,
-    "slidesToScroll": 1
+    "slidesToScroll": 1,
+    "dots": true,
+    "fade": true,
+    "cssEase": 'linear',
+    "arrows": true
   };
-
+  
   constructor() { }
+
+  beforeChange (event) {
+    const currentSlide: number = event.currentSlide;
+    
+    // To add animation in the hero slider
+
+    if ( currentSlide !== event.currentSlide) {
+      console.log(event);
+    }
+  }
 
   ngOnInit() {
   }
-
 }

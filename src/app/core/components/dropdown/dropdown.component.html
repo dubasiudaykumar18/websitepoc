@@ -1,0 +1,10 @@
+<div class="dropdown">
+  <ng-container *ngIf="options">
+    <ul class="list-dropdwon">
+      <li *ngFor="let item of options; let i = index;">
+        <a [id]='i'[routerLink]="'/' + item.link" [innerText]='item.name'>
+        </a>
+      </li>
+    </ul>
+  </ng-container>
+</div>

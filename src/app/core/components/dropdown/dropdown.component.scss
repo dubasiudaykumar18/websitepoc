@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/settings';
+
+/* ------------------------------------------------------------ *\
+	Dropdown
+\* ------------------------------------------------------------ */
+
+.dropdown {
+  & {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 180px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .3s;
+
+    ul {
+      list-style: none;
+      
+      a {
+        display: block;
+        padding: 12px 25px;
+        white-space: nowrap;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import 'settings';
+@import 'variables';
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { 
+    min-width: 320px; 
+    background: $white; 
+    font-family: $font-family-sans-serif; font-size: $font-size-base; 
+    line-height: $line-height-base; 
+    color: #7e7f80; 
+    overflow-x: hidden; 
+}
+
+a { color: inherit; text-decoration: underline; transition: .4s; }
+
+a:hover,
+a[href^="tel"] { text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-bottom: calc(#{$line-height-base / 2}); }
+
+h1 { font-size: 48px; font-family: $font-family-serif; color: $white; line-height: 1.4; }
+h2 { font-size: 42px; font-family: $font-family-serif; color: $dark-blue; }
+h3 { font-size: 22px; }
+h4 { font-size: 16px; color: $dark-blue; }
+h5 { font-size: 15px; }
+h6 { font-size: 14px; }
+
+p,
+ul,
+ol,
+dl,
+hr,
+table,
+blockquote { margin-bottom: $line-height-base; }
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child { margin-bottom: 0; }
+
+
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.btn {
+	border: 0;
+	display: block;
+	appearance: none;
+	background: transparent;
+}
+
+.btn--blue {
+    background-color: $blue;
+    color: $white;
+}
+
+/* ------------------------------------------------------------ *\
+	Inputs
+\* ------------------------------------------------------------ */
+
+input {
+    border: 0;
+    padding: 0 15px;
+    appearance: none;
+    color: $black;
+}
