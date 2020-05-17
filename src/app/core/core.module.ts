@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { DropdownModule } from './components/dropdown/dropdown.module';
+import { SharedModule } from '../shared/modules/shared.module';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { DropdownModule } from './components/dropdown/dropdown.module';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     DropdownModule,
     RouterModule
   ],

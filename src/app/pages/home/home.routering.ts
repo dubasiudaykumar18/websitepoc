@@ -5,7 +5,7 @@ import { ArchitectureComponent } from './subpages/architecture/architecture.comp
 import { IntegrationComponent } from './subpages/integration/integration.component';
 
 export const homeRouters: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
     { path: 'value-proposition', component: ValuePropositionComponent },
     { path: 'architecture', component: ArchitectureComponent },
     { path: 'integrations', component: IntegrationComponent }
