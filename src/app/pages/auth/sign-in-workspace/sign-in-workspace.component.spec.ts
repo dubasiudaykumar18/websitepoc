@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { SignInWorkspaceComponent } from './sign-in-workspace.component';
 import { Router } from '@angular/router';
-import { FormsModule, FormBuilder } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 describe('SignInWorkspaceComponent', () => {
   let component: SignInWorkspaceComponent;
@@ -14,6 +14,7 @@ describe('SignInWorkspaceComponent', () => {
       declarations: [ SignInWorkspaceComponent ],
       imports: [
         FormsModule,
+        ReactiveFormsModule,
         RouterTestingModule.withRoutes([])
       ],
       providers: [

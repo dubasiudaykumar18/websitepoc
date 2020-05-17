@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SignInWorkspaceComponent } from './sign-in-workspace/sign-in-workspace.component';
 import { RouterModule } from '@angular/router';
 import { authRouters } from './auth.routering';
@@ -17,6 +17,7 @@ import { GetStartedComponent } from './get-started/get-started.component';
   ],
   imports: [
     RouterModule.forChild(authRouters),
+    FormsModule,
     ReactiveFormsModule,
     CommonModule
   ]
