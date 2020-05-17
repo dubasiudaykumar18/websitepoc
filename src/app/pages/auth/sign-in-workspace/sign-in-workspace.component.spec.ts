@@ -46,7 +46,7 @@ describe('SignInWorkspaceComponent', () => {
     expect(email.invalid).toBeTruthy();
   });
 
-  it('should navigate not navigate if the email is invalid ', () => {
+  it('should navigate if the email address is valid ', () => {
     component = fixture.componentInstance;
     const navigateSpy = spyOn(router, 'navigateByUrl');
     const email = component.formSignIn.get('email');
