@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in-workspace',
-  templateUrl: './sign-in-workspace.component.html',
-  styleUrls: ['./sign-in-workspace.component.scss']
+  templateUrl: './sign-in-workspace.component.html'
 })
 export class SignInWorkspaceComponent implements OnInit {
 

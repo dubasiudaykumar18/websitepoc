@@ -4,12 +4,14 @@ import { SignInWorkspaceComponent } from './sign-in-workspace/sign-in-workspace.
 import { RouterModule } from '@angular/router';
 import { authRouters } from './auth.routering';
 import { SignInDomainComponent } from './sign-in-domain/sign-in-domain.component';
+import { GetStartedComponent } from './get-started/get-started.component';
 
 
 
 @NgModule({
   declarations: [
     SignInWorkspaceComponent,
+    GetStartedComponent,
     SignInDomainComponent
   ],
   imports: [
