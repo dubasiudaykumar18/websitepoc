@@ -8,7 +8,7 @@ const routes: Routes = [
   {  path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   {  path: 'about-us', loadChildren: () => import('./pages/about-us/about-us.module').then(m => m.AboutUsModule) },
   {  path: 'contact-us', loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsModule) },
-  {  path: 'signin', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
+  {  path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
   {  path: '404',  component: PageNotFoundComponent },
   {  path: '**', component: PageNotFoundComponent }
 ];

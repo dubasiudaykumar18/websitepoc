@@ -1,0 +1,53 @@
+<section class="section-sign-in gap-large">
+    <div class="container">
+        <div class="section__body">
+            <form class="form-auth">
+                <div class="form__wrapper">
+                    <div class="form__head">
+                        <h2>
+                            Sign in to Company
+                        </h2>
+            
+                        <p>
+                            Enter your <strong>email</strong> and <strong>password</strong> to login 
+                        </p>
+                    </div>
+    
+                    <div class="form__body">
+                        <div class="form__control">
+                            <input type="email" class="form__input" placeholder="you@example.com">
+                        </div>
+
+                        <div class="form__control">
+                            <input type="password" class="form__input" placeholder="password">
+                        </div>
+                        
+                        <div class="form__actions">
+                            <button (click)="submitDomain()" class="btn btn-submit">
+                                <span>
+                                    Sign in
+                                </span>
+                            </button>
+                        </div>
+                        
+                        <div class="form__control">
+                            <input type="checkbox" id="remember" class="form__checkbox" name="remember">
+                            
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <ul class="list-links">
+                            <li>
+                                <a routerLink='/get-started'>Forgot password?</a>
+                            </li>
+                            
+                            <li>
+                                <a routerLink='/get-started'>Forgot which email you used?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

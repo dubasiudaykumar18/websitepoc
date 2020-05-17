@@ -227,7 +227,8 @@ tab {
         max-width: 635px;
         margin: 0 auto;
         background-color: $white;
-        padding: 20px;
+		padding: 20px;
+		color: $black;
         border: 1px solid $light-grey;
         box-shadow: 0 1px 0 rgba(0,0,0,.25);
     }
@@ -246,7 +247,7 @@ tab {
         }
     }
     .form__wrapper {
-        max-width: 460px;
+        max-width: 420px;
         margin: 0 auto;            
     }
 
@@ -257,7 +258,10 @@ tab {
             justify-self: center;
             margin-bottom: 16px;
         }
-
+		.form__checkbox{ 
+			appearance: checkbox;
+			margin-right: 5px;
+		}
         .form__input {
             padding: .75rem;
             border: 1px solid #868686;
@@ -304,7 +308,8 @@ tab {
             transform: translateX(4px);   
         }
     }
-    .form__entry { 
+    .form__entry {
+		font-size: 13px; 
         color: $black;
         
         a { 
@@ -312,5 +317,20 @@ tab {
             text-decoration: none;
             color: $blue;
         }
-    }
+	}
+	.list-links {
+		& {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			list-style: none;
+		}
+		li ~ li {
+			margin-left: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: $blue;
+		}
+	}
 }
