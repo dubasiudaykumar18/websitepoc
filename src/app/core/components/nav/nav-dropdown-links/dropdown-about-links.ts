@@ -3,13 +3,13 @@ import { NavDropdown } from '../nav-dropdown';
 export const dropdownAboutLinks: NavDropdown[] = 
 [{
     name: "Pilot",
-    link: "pilot"
+    link: "about-us/pilot"
   },
   {
     name: "Story line",
-    link: "story-line"
+    link: "about-us/story-line"
   },
   {
     name: "Meet the Team",
-    link: "meet-the-team"
+    link: "about-us/meet-the-team"
 }];
