@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-header *ngIf="!isDashboardActive"></app-header>
 
-<main class="main main--margin-top">
+<main [ngClass]="{'main--margin-top': !isDashboardActive}" class="main">
     <router-outlet></router-outlet>
 </main>
 
-<app-footer></app-footer>
+<app-footer *ngIf="!isDashboardActive"></app-footer>

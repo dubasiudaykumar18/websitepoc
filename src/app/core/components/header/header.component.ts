@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { dropdownHomeLinks } from '../nav/nav-dropdown-links/dropdown-home-links';
 import { dropdownAboutLinks } from '../nav/nav-dropdown-links/dropdown-about-links';
 import { dropdownServiceLinks } from '../nav/nav-dropdown-links/dropdown-services-links';
@@ -18,10 +18,6 @@ export class HeaderComponent implements OnInit {
   dropdownServiceLinks: NavDropdown[] = dropdownServiceLinks;
   dropdownHowItWorksLinks: NavDropdown[] = dropdownHowItWorksLinks;
   dropdownContactLinks: NavDropdown[] = dropdownContactLinks;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  
+  ngOnInit() {}
 }
