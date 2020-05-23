@@ -1,0 +1,21 @@
+<div [ngClass]="{'sidebar--expanded': isSidebarActive}" class="sidebar">
+    <div class="sidebar__head">
+        <div class="sidebar__image">
+            <img src="assets/images/logo-white.png" alt="">
+        </div>
+
+        <div class="sidebar__toggle">
+            <a (click)='toggleSideBar()' class="toggle-link">
+               <img *ngIf="!isSidebarActive; else toggleSideBarMenu" src="assets/images/icons/ico-toggle-off.svg" alt="toggle-button"> 
+                
+               <ng-template #toggleSideBarMenu>
+                    <img src="assets/images/icons/ico-toggle-on.svg" alt="toggle-button"> 
+                </ng-template> 
+            </a>
+        </div>
+    </div>
+
+    <div class="sidebar__body">
+        
+    </div>
+</div>

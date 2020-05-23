@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.router.events
     .pipe(filter(event => event instanceof NavigationEnd))
     .subscribe((event: NavigationEnd) => {
-      if (event.url === '/dashboard') {
+      if (event.url.includes('/dashboard')) {
         this.isDashboardActive = true;
       } else {
         this.isDashboardActive = false;

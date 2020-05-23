@@ -1,0 +1,50 @@
+@import '../../../../../assets/styles/variables';
+
+/* ------------------------------------------------------------ *\
+	Sidebar
+\* ------------------------------------------------------------ */
+
+.sidebar {
+    position: fixed;
+    background-color: $dark-grayish-blue;
+    color: white;
+    max-width: 260px;
+    min-height: 100vh;
+    transition: all .3s;
+    
+    &:hover {
+        max-width: 260px;
+        .sidebar__head {
+            .toggle-link {
+                display: inline-block;
+            }
+        }
+    }
+    .sidebar__head {
+        & {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .toggle-link {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+    }
+    .sidebar__image {
+        max-width: 160px;
+        margin-right: auto;
+    }
+
+    &--expanded {
+        max-width: 71px;
+
+        .sidebar__head {
+            .toggle-link {
+                display: none;
+            }
+        }
+    }
+}
