@@ -1,0 +1,38 @@
+{
+    "/signIn": {
+        "target": "https://speed.mantrapm.com/mpm-console",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/signIn": ""
+        }
+    },
+    "/portalApi": {
+        "target": "https://speed.mantrapm.com/mpm-console",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/portalApi": ""
+        }
+    },
+    "/signUpApi": {
+        "target": "https://console.mantrapm.com/mpm-console",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/signUpApi": ""
+        }
+    },
+    "/nodeApi": {
+        "target": "http://localhost:4000",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/nodeApi": ""
+        }
+    }
+}

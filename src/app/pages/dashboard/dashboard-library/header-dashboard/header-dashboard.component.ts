@@ -7,7 +7,7 @@ import { DashboardService } from '../../dashboard.service';
   styleUrls: ['./header-dashboard.component.scss']
 })
 export class HeaderDashboardComponent implements OnInit {
-  constructor(private dashboardService: DashboardService) { }
+  constructor(public dashboardService: DashboardService) { }
 
   ngOnInit() {}
 
